@@ -5,7 +5,7 @@ class DataSource:
         self.path = path
         self.spark = SparkSession.builder\
                         .appName("CRDH")\
-                        .config("spark.jars", "K:\\Manish\\Data Engineering\\Data\\Financial\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0.jar")\
+                        .config("spark.jars", "C:\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0.jar")\
                         .getOrCreate()
         self.properties = {
             "user":"root",
